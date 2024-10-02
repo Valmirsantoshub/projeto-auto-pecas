@@ -79,8 +79,8 @@ section ul {
 
 ul li {
     background-color: #fff;
-    margin: 10px 0;
-    padding: 10px;
+    margin: 10px 0px;
+    padding: 10px 0px;
     font-weight: bold;
     list-style-type: none;
 
@@ -88,9 +88,10 @@ ul li {
 
 aside {
     background-color: #333;
-    columns: 2;
+    columns:2;
     padding-bottom: 20px;
     margin: 10px 0px;
+   
 }
 
 aside a {
@@ -102,7 +103,7 @@ aside > ul li {
 
     background-color: #333;
     color: white;
-  
+ 
     padding-top: 10px;
     line-height: .5em;
     
@@ -131,7 +132,7 @@ section {
 
 }
 
-section>p {
+section > p {
     padding-bottom: 2em;
 }
 
@@ -149,7 +150,7 @@ section.imagem {
     /* para fixar a imagem no fundo deve usar background-attachment: fixed;*/
 }
 
-section.imagem>p {
+section.imagem > p {
     background-color: rgba(0, 0, 0, 0.514);
     padding: 5px;
     display: inline-block;
@@ -187,7 +188,8 @@ section#img02 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: -30px 0px 0px 0p
+    margin: -40px -10px px -10px;
+    height: 100px;
 }
 .pequena  {
    width:600px; 

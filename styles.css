@@ -105,7 +105,7 @@ aside > ul li {
     color: white;
  
     padding-top: 10px;
-    line-height: .5em;
+    line-height: 1.5em;
     
 
 }
@@ -176,8 +176,8 @@ section#img02 {
     
 }
 .conteudo img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     list-style-type: none;
 }
@@ -188,7 +188,7 @@ section#img02 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: -40px -10px px -10px;
+    margin: -30px -10px px -10px;
     height: 100px;
 }
 .pequena  {
@@ -211,6 +211,17 @@ footer {
    font-weight: bold;
    
 
+}
+.whatsapp {
+    position: fixed;
+    bottom: 3%;
+    right: 1%;
+    padding: 10px;
+    z-index: 10000000;
+    
+}
+.whatsapp:hover{
+    transform: scale(.8);
 }
 
 /* footer ul {

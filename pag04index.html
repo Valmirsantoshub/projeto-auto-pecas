@@ -100,56 +100,64 @@
             text-decoration: underline;
             
         }
-        header a{
-            text-decoration: none;
-            padding: 10px;
-            font-size: large;
-          
-            
-            
-        }
-        header img{
-            width: 30px;
-            height: 30px;
-            cursor: pointer;
-            display: block;
-            margin-left: 30px;
-            text-align: center;
-        }
-        menu{
+            #itens {
             display: none;
-
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            padding: 0px;
+            /* background-color: white; */
+            /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+            z-index: 1;
         }
-        menu > a{
+
+        #itens a {
+            display: block;
+            padding: 5px 5px;
+            margin-bottom: 10px;
             text-decoration: none;
             color: black;
-            display: block;
-            padding: 5px;
-           
+            margin-left: 30px;
         }
-        header img:hover{
-            transform: scale(1.2);
+
+         #itens a:hover {
+            background-color: #ddd;
+            border-radius: 10px;
+            
+    
+         }
+        header img {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            padding: 0;
+            margin-left: 30px;
+        }
+
+        header img:hover + #itens,
+        #itens:hover {
+            display: block;
         }
         .whatsapp:hover{
-            transform: scale(.8);
+            transform: scale(1.2);
         }
        
     </style>
 </head>
 
 <body>
-    <header>
-        <img src="imagens/icons8-cardápio-50.png" alt="menu/png" onclick="clicar()">
+    <header id="img">
+        <img src="imagens/icons8-cardápio-50.png" alt="menu/png">
         <menu id="itens">
+        
             <a href="#"> Quem somos</a>
             <a href="#">Fale conosco</a>
             <a href="#">Contato</a>
-            <a href="#">Confira Nossas Ofertas</a>
-            
-    </menu>
+            <a href="#">Ofertas</a>
+        </menu>
         <h1> Iluminação</h1>
+    
         <h2>Confira nossas Ofertas</h2>
-       
     </header>
     <div class="imagens">
         <div class="imagem"><img src="imagens/iluminação.webp" alt="logo">

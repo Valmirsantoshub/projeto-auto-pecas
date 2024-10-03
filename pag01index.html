@@ -93,7 +93,7 @@
             /* color: #32333350;
             transition-duration: .5s; */
         }
-        header a{
+        header#a{
             text-decoration: none;
             padding: 10px;
             font-size: large;   
@@ -102,57 +102,69 @@
             background-color: #333;
     
         }
-        header img{
+        header {
+         position: relative;
+        }
+
+        #itens {
+            display: none;
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            padding: 0px;
+            /* background-color: white; */
+            /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+            z-index: 1;
+        }
+
+        #itens a {
+            display: block;
+            padding: 5px 5px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: black;
+            margin-left: 30px;
+        }
+
+         #itens a:hover {
+            background-color: #ddd;
+            border-radius: 10px;
+            
+    
+         }
+        header img {
+            cursor: pointer;
             width: 30px;
             height: 30px;
-            display: block;
-            cursor: pointer;
-            text-align: center;
+            padding: 0;
             margin-left: 30px;
-            
         }
-        menu{
-        display: none;
-    
-        }
-        menu >a{
+
+        header img:hover + #itens,
+        #itens:hover {
             display: block;
-            text-decoration: none;
-            padding: 5px; 
-            color: black;
-      
         }
-        header img:hover{
-            transform: scale(1.2);
-        }    
         .whatsapp:hover{
-            transform: scale(.8);
+            transform: scale(1.2);
         }
-        
-        
 
     </style>
 </head>
 <body>
-    <header>
-        <img src="imagens/icons8-cardápio-50.png" alt="menu/png" onclick="clicar()">
+    <header id="img">
+        <img src="imagens/icons8-cardápio-50.png" alt="menu/png">
         <menu id="itens">
         
             <a href="#"> Quem somos</a>
             <a href="#">Fale conosco</a>
             <a href="#">Contato</a>
             <a href="#">Ofertas</a>
-            
-           
         </menu>
         <h1> Pneus de varias marcas</h1>
-        <!-- <img src="imagens/icons8-cardápio-50.png" alt="menu/png" onclick="clicar()"> -->
-        <h2>Confira nossas Ofertas</h2>
-
-            <!-- <img src="imagens/icons8-cardápio-50.png" alt="menu/png" onclick="clicar()"> -->
     
-       
+        <h2>Confira nossas Ofertas</h2>
     </header>
+
     <div class="imagens">
         <div class="imagem"><img src="imagens/pneu1.jpg" alt="logo pneu1"><p>Aro 18 a partir de 200 R$</p></div>
         <div class="imagem"><img src="imagens/pneu2.jpg" alt="logo pneu2"><p>Aro 17 a partir de 200 R$</p></div>
@@ -181,7 +193,8 @@
         </ul>
       
     </aside>
-    <style>
+    <!--botao do whatsapp-->
+    <style> 
         .whatsapp {
             position: fixed;
             bottom: 3%;
@@ -190,7 +203,7 @@
             z-index: 10000000;
         }
     </style>
-    <div>
+    <div>     
         <a href="https://api.whatsapp.com/send?phone=5515996123402" target="_blank">
             <svg class="whatsapp" xmlns="imagens/Pamela.jpeg" width="65" height="65" viewBox="0 0 39 39">
                 <path fill="#00E676"

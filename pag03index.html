@@ -103,55 +103,63 @@
             border-radius: 5px;
             transition-duration: .5s; */
         }
-        header a{
-            text-decoration: none;
-            padding: 10px;
-            font-size: large;
-            
-            
-            
+            #itens {
+            display: none;
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            padding: 0px;
+            /* background-color: white; */
+            /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+            z-index: 1;
         }
-        header img{
+
+        #itens a {
+            display: block;
+            padding: 5px 5px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: black;
+            margin-left: 30px;
+        }
+
+         #itens a:hover {
+            background-color: #ddd;
+            border-radius: 10px;
+            
+    
+         }
+        header img {
+            cursor: pointer;
             width: 30px;
             height: 30px;
-            display: block;
-            cursor: pointer;
-            text-align: center;
+            padding: 0;
             margin-left: 30px;
-            
         }
-        menu{
-        display: none;
-    
-        }
-        menu >a{
+
+        header img:hover + #itens,
+        #itens:hover {
             display: block;
-            text-decoration: none;
-            padding: 5px;
-            color: black;
-        }
-        header img:hover{
-            transform: scale(1.2);
         }
         .whatsapp:hover{
-            transform: scale(.8);
+            transform: scale(1.2);
         }
 
     </style>
 </head>
 
 <body>
-    <header>
-        <img src="imagens/icons8-cardápio-50.png" alt="menu/png" onclick="clicar()">
+    <header id="img">
+        <img src="imagens/icons8-cardápio-50.png" alt="menu/png">
         <menu id="itens">
         
             <a href="#"> Quem somos</a>
             <a href="#">Fale conosco</a>
             <a href="#">Contato</a>
             <a href="#">Ofertas</a>
-            
         </menu>
-        <h1> Acessórios</h1>
+        <h1> Acessorios</h1>
+    
         <h2>Confira nossas Ofertas</h2>
     </header>
     <div class="imagens">

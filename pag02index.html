@@ -106,17 +106,19 @@
             font-size: large;
           
         }
-            #itens {
+        menu#itens {
             display: none;
             position: absolute;
             top: 20px;
             left: 0px;
             padding: 0px;
-           
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0); 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
             z-index: 1;
         }
 
-        #itens a {
+        div#itens a {
             display: block;
             padding: 5px 5px;
             margin-bottom: 10px;
@@ -125,7 +127,7 @@
         
         }
 
-         #itens a:hover {
+         div#itens a:hover {
             background-color: #ddd;
             border-radius: 10px;
             
@@ -155,10 +157,10 @@
         <img src="imagens/icons8-cardápio-50.png" alt="menu/png">
         <menu id="itens">
         
-            <a href="#"> Quem somos</a>
-            <a href="#">Fale conosco</a>
-            <a href="#">Contato</a>
-            <a href="#">Ofertas</a>
+            <div id="itens"><a href="#"> Quem somos</a></div>
+            <div id="itens"><a href="#">Fale conosco</a></div>
+            <div id="itens"><a href="#">Contato</a></div>
+            <div id="itens"><a href="#">Ofertas</a></div>
         </menu>
         <h1> Óleos e Lubrificantes</h1>
     

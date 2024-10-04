@@ -158,7 +158,7 @@
 </head>
 <body>
     <header id="img">
-        <img src="imagens/icons8-cardápio-50.png" alt="menu/png" onclick="clicar()">
+        <img src="imagens/icons8-cardápio-50.png" alt="menu/png">
         <menu id="itens">
         
             <div id="itens"><a href="#"> Quem somos</a></div>
@@ -235,4 +235,26 @@
 
     }
 </script>  -->
+<!-- <script>
+    let carrinho = [];
+let total = 0;
+
+function adicionarAoCarrinho(produto, preco) {
+    carrinho.push({ produto, preco });
+    total += preco;
+    atualizarCarrinho();
+}
+
+function atualizarCarrinho() {
+    const itensCarrinho = document.getElementById('itensCarrinho');
+    itensCarrinho.innerHTML = '';
+    carrinho.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `${item.produto} - R$ ${item.preco}`;
+        itensCarrinho.appendChild(li);
+    });
+    document.getElementById('total').textContent = total;
+}
+
+</script> -->
 </html>
